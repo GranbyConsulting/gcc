@@ -19,27 +19,31 @@ The associated directory in config contains the target configuration information
 BARE METAL ISSUES
 
 If STEP 8 fails when building a bare-metal tool chain:
+
 	Look in the libstdc++ folder in the gcc source tree.
 	Open the configure file and look for "*-vxworks)"
-	The line should be follows by various $as_echo invocations/
+	The line should be followed by various $as_echo invocations.
 	Above this line, add lines of "*-unknown-*)" and ";;"
 	Restart from step 8, and the library will build.
 	
 BUILD ISSUES ON MSYS2
 
 If STEP 2 fails when trying to expand the Linux headers:
+
 	Perform the step on a real or virtual Linux machine.
 	Locate the headers in the install/$target/include directory.
 	Copy them into your src/_include/$arch/include directory.
 	Restart from step 2, and the script will use the pre-copied sources.
 
 If STEP 7 fails with a complaint about a rtld-Rules being used directly:
+
 	Switch to the build/$target/glibc/elf directory.
 	Open the librtld.map file in your favorite text editor.
 	Replace the C:/MSYS2 or similar prefix with an empty string.
 	Restart from step 7, and the build will continue without error.
 
 If STEP 8 fails with a complaint about an invalid linker version file:
+
 	Switch to the build/$target/gcc/$target/libgcc directory.
 	Open the Makefile file in your favorite text editor.
 	Locate the rule for the libgcc.map target.
