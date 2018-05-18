@@ -47,3 +47,7 @@ If STEP 8 fails with a complaint about an invalid linker version file:
 	The line will start with something like } | dos2unix | $(AWK).
 	You may also modify the source's Makefile.in if required.
 	Restart from step 8, and the build will continue without error.
+
+CREDITS
+
+Inspired by http://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/
