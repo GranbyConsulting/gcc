@@ -20,10 +20,11 @@ BARE METAL ISSUES
 
 If STEP 8 fails when building a bare-metal tool chain:
 
-	Look in the libstdc++ folder in the gcc source tree.
-	Open the configure file and look for "*-vxworks)"
+	Locate the libstdc++ folder in the gcc source tree.
+	Open the configure file in your favorite text editor.
+	Search the file for a line comprising "*-vxworks)".
 	The line should be followed by various $as_echo invocations.
-	Above this line, add lines of "*-unknown-*)" and ";;"
+	Above the vxworks line, add lines of "*-unknown-*)" and ";;"
 	Restart from step 8, and the library will build.
 	
 BUILD ISSUES ON MSYS2
