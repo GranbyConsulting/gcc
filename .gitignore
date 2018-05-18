@@ -1,0 +1,5 @@
+/archives/*
+/build/*
+/install/*
+/src/*
+!/src/_include
