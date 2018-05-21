@@ -38,7 +38,7 @@ do
 	if [ ! -d "${b%.*.*}" ]
 	then
 		echo Expanding $f
-		if [ ! -x "$MSYSTEM" ] && [ `which 7z` ]
+		if [ ! -z "$MSYSTEM" ] && [ `which 7z` ]
 		then
 			7z x -y $f
 			7z x -y ${b%.*}
