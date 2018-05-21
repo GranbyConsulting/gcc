@@ -13,6 +13,17 @@ source scripts/do-setup.sh
 
 source scripts/do-config.sh
 
+#=================================
+# Force static linkage on MSYS64.
+#=================================
+
+if [ ! -z $MSYSTEM ]
+then
+	export CFLAGS="$CFLAGS -static -static-libgcc"
+	export CXXFLAGS="$CXXFLAGS -static -static-libgcc -static-libstdc++"
+	export LDFLAGS="$LDFLAGS  -static -static-libgcc -static-libstdc++"
+fi
+
 #================================
 # Build and install the package.
 #================================
