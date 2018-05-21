@@ -13,6 +13,7 @@ ver_gmp=6.1.1
 ver_mpc=1.0.3
 ver_isl=0.16.1
 ver_cloog=0.18.1
+ver_gdb=8.1
 
 #=======
 # Done.

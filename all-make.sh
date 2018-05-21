@@ -16,6 +16,7 @@ fi
 ([ $from \> 6 ] || (echo 6 > last-step && scripts/6-make-libgcc.sh	)) &&\
 ([ $from \> 7 ] || (echo 7 > last-step && scripts/7-make-glibc-rest.sh	)) &&\
 ([ $from \> 8 ] || (echo 8 > last-step && scripts/8-make-rest.sh	)) &&\
+([ $from \> 9 ] || (echo 9 > last-step && scripts/9-make-gdb.sh		)) &&\
 echo Done. > last-step							   &&\
 echo ALL OKAY.								   &&\
 exit 0

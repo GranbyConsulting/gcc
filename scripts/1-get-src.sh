@@ -20,6 +20,8 @@ wget --no-check-certificate -nc -P archives http://ftpmirror.gnu.org/gmp/gmp-$ve
 wget --no-check-certificate -nc -P archives http://ftpmirror.gnu.org/mpc/mpc-$ver_mpc.tar.gz
 wget --no-check-certificate -nc -P archives ftp://gcc.gnu.org/pub/gcc/infrastructure/isl-$ver_isl.tar.bz2
 wget --no-check-certificate -nc -P archives ftp://gcc.gnu.org/pub/gcc/infrastructure/cloog-$ver_cloog.tar.gz
+wget --no-check-certificate -nc -P archives ftp://gcc.gnu.org/pub/gcc/infrastructure/cloog-$ver_cloog.tar.gz
+wget --no-check-certificate -nc -P archives https://ftp.gnu.org/gnu/gdb/gdb-$ver_gdb.tar.xz
 
 #======================================================================
 # Extract source archive into folders, skipping those already present.

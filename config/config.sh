@@ -5,7 +5,7 @@
 
 if [ -z $target ]
 then
-export target=m68k-elf
+export target=arm-eabi
 fi
 
 #======

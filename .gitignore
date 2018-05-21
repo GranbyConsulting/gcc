@@ -3,3 +3,4 @@
 /install/*
 /src/*
 !/src/_include
+/last-step
