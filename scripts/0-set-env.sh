@@ -42,7 +42,7 @@ fi
 
 if [ $pcount \> 1 ]
 then
-	export njobs="-j $((2 * $pcount / 3))"
+	export njobs="-j$((2 * $pcount / 3))"
 else
 	export njobs=
 fi

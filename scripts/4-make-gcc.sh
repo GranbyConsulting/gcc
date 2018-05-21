@@ -13,6 +13,14 @@ source scripts/do-setup.sh
 
 source scripts/do-config.sh
 
+#=============================
+# Force single threaded make.
+#=============================
+
+export njobs=
+
+export PARALLELMFLAGS=$njobs
+
 #==========================================
 # Build and install the inintial compiler. 
 #==========================================
