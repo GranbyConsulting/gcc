@@ -3,7 +3,7 @@
 # Find the package versions. 
 #============================
 
-source scripts/do-versions.sh
+source scripts/do-setup.sh
 
 #=====================================================
 # Download packages from well-known source locations.

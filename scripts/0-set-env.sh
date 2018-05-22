@@ -1,11 +1,15 @@
 
-#=========================
-# Find the configuration.
-#=========================
+#================================
+# Clear the configuration flags.
+#================================
 
 unset no_glibc
 unset no_isl
 unset no_gomp
+
+#=========================
+# Find the configuration.
+#=========================
 
 source config/config.sh
 

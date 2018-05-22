@@ -11,8 +11,6 @@ package=linux
 
 source scripts/do-setup.sh
 
-source scripts/do-versions.sh
-
 #=============================================
 # Modify the symlinks in the GCC source tree.
 #=============================================

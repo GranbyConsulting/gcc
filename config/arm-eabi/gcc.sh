@@ -10,7 +10,6 @@
 	--enable-languages=c,c++			\
 	--enable-debug					\
 	--disable-nls					\
-	--disable-multilib				\
 	--disable-shared				\
 	--disable-libmpx				\
 	--disable-libgomp				\
@@ -18,13 +17,12 @@
 	--disable-libssp				\
 	--disable-libcomp				\
 	--disable-isl					\
-	--with-arch=armv7-a				\
-	--with-fpu=vfpv3				\
-	--with-float=softfp				\
-	--with-mode=arm					\
+	--enable-multilib				\
+	--with-multilib-list=aprofile,rmprofile		\
 	--with-gcc					\
 	--with-gnu-as					\
 	--with-gnu-ld					\
+	--with-system-zlib				\
 	2>&1 | tee conf-gcc.log
 
 #=======
